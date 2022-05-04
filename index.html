@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/86f299a95e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Weather App</title> 
+</head>
+
+<body>
+  <main>
+    <h1>Weather App</h1>
+    <section class="weather_container">
+      <section class="top_container">
+        <section class="search_container">
+      <form>
+        <input type="text" id="city" name="city" placeholder="Search City" required>
+        <button type="button" id="search">Search</button>
+      </form>
+           <h3 class="cityText" id="city_text">City Name</h3> 
+      </section>
+      </section>
+      <section class="bottom_container">
+        <section class="temp_container">
+          <h2 id="temperature">Current Temp</h2>
+          <h3 class="temp_convert"><span id="fHeight">F</span> / <span id="celcius">C</span></h3>
+        </section>
+        <section class="icon_container">
+          <img src="">
+        </section>
+      </section>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
