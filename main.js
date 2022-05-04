@@ -3,27 +3,7 @@ document.getElementById('search').addEventListener('click', findCity)
 document.querySelector('#fHeight').addEventListener('click', convertF)
 document.querySelector('#celcius').addEventListener('click', convertC)
 
-// document.getElementById('search').addEventListener('keypress', function(e) {
-//   if (e.key === 13) {
-//     const searchCity = document.querySelector('input').value
-
-//     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=20c3e49019bea31c373001401a7749b4&units=imperial`)
-//     .then(res => res.json()) // parse response as JSON
-//     .then(data => {
-//       console.log('Get outta here!')
-//       document.querySelector('#city_text').innerText = data.name
-//       document.querySelector('#temperature').innerText = Math.floor(data.main.temp) + '°'
-//       document.querySelector('img').src = `http://openweathermap.org/img/w/` + data.weather[0].icon + `.png`
-
-//       searchCity.value = ''
-//     })
-//     .catch(err => {
-//         console.log(`error ${err}`)
-//     }); 
-//   }
-//   }
-// )
-
+//disable enter key. it resets on press, figure out how to search on press...
 window.addEventListener('keydown',function(e){
   if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter' || e.keyCode==13){
     if(e.target.nodeName=='INPUT'&&e.target.type=='text'){
