@@ -17,7 +17,7 @@ function findCity(e){
   e.preventDefault
   const searchCity = document.querySelector('input').value
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=20c3e49019bea31c373001401a7749b4&units=imperial`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=&units=imperial`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log('Get outta here!')
@@ -40,7 +40,7 @@ function findCity(e){
 //on click convert fheight to celcius
 function convertF() {
   const searchCity = document.querySelector('input').value
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=20c3e49019bea31c373001401a7749b4&units=imperial`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=&units=imperial`)
   .then(res => res.json()) // parse response as JSON
   .then(data => {
     document.querySelector('#temperature').innerText = Math.floor(data.main.temp) + '°' 
@@ -53,7 +53,7 @@ function convertF() {
 //convert to celcius 
 function convertC() {
   const searchCity = document.querySelector('input').value
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=20c3e49019bea31c373001401a7749b4&units=imperial`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=&units=imperial`)
   .then(res => res.json()) // parse response as JSON
   .then(data => {
 
